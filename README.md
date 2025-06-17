@@ -36,29 +36,29 @@
 
 
 ⚙️ How to Run Locally
-  1.Clone the repository
-    '''
+  1.Clone the repository  
+    '''  
     git clone https://github.com/Rajesh5101x/Python_Flask_calculator.git  
-    cd flask-calculator
-    '''
+    cd flask-calculator  
+    '''  
     
-  2.Create and activate virtual environment (optional)
-    '''
+  2.Create and activate virtual environment (optional)  
+    '''  
     python -m venv venv  
-    source venv/bin/activate   # On Windows: venv\Scripts\activate
-    '''
+    source venv/bin/activate   # On Windows: venv\Scripts\activate  
+    '''  
 
-  3.Install dependencies
-    '''
-    pip install Flask
-    '''
+  3.Install dependencies  
+    '''  
+    pip install Flask  
+    '''  
 
-  4.Run the app
-    '''
-    python app.py
-    '''
+  4.Run the app  
+    '''  
+    python app.py  
+    '''  
 
-  5.Open http://127.0.0.1:5000 in your browser.
+  5.Open http://127.0.0.1:5000 in your browser.  
 
 
 ⌨️ Keyboard Support
