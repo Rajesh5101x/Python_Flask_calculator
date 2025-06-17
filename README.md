@@ -38,7 +38,7 @@
 ⚙️ How to Run Locally
   1.Clone the repository
     '''
-    git clone https://github.com/yourusername/flask-calculator.git
+    git clone https://github.com/Rajesh5101x/Python_Flask_calculator.git
     cd flask-calculator
     '''
     
