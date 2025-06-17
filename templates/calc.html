@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Calculator</title>
+    <title>Python {{title}}</title>
     <style>
         * {
             margin: 0;
@@ -134,7 +134,6 @@
             transform: translateY(0);
         }
 
-        /* Operator buttons */
         button:nth-child(1), button:nth-child(2), button:nth-child(3), button:nth-child(4),
         button:nth-child(8), button:nth-child(12) {
             background: linear-gradient(135deg, #ff6b35, #f7931e);
@@ -148,7 +147,6 @@
             box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
         }
 
-        /* Equals button */
         button:nth-child(12) {
             background: linear-gradient(135deg, #4caf50, #2e7d32);
             grid-row: span 2;
@@ -159,7 +157,6 @@
             box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
         }
 
-        /* Clear button */
         button:last-child {
             background: linear-gradient(135deg, #f44336, #c62828);
             color: white;
@@ -171,12 +168,10 @@
             box-shadow: 0 8px 25px rgba(244, 67, 54, 0.4);
         }
 
-        /* Wide button (0) */
         .wide {
             grid-column: span 2;
         }
 
-        /* Number buttons glow effect */
         button:nth-child(5), button:nth-child(6), button:nth-child(7),
         button:nth-child(9), button:nth-child(10), button:nth-child(11),
         button:nth-child(13), button:nth-child(14), button:nth-child(15),
@@ -315,14 +310,12 @@
             }
         }
 
-        // Add keyboard support including numpad
         document.addEventListener('keydown', function(event) {
-            event.preventDefault(); // Prevent default browser behavior
+            event.preventDefault(); 
             
             const key = event.key;
             const code = event.code;
             
-            // Handle regular numbers and numpad numbers
             if ((key >= '0' && key <= '9') || code.startsWith('Numpad') && /\d/.test(code.slice(-1))) {
                 const num = code.startsWith('Numpad') ? code.slice(-1) : key;
                 if (num >= '0' && num <= '9') {
@@ -330,7 +323,6 @@
                     animateButton(num);
                 }
             }
-            // Handle operators from main keyboard and numpad
             else if (['+', '-', '*', '/'].includes(key) || 
                      ['NumpadAdd', 'NumpadSubtract', 'NumpadMultiply', 'NumpadDivide'].includes(code)) {
                 let symbol = key;
@@ -342,30 +334,25 @@
                 appendSymbol(symbol);
                 animateButton(symbol === '*' ? '×' : symbol);
             }
-            // Handle decimal point
             else if (key === '.' || code === 'NumpadDecimal') {
                 appendSymbol('.');
                 animateButton('.');
             }
-            // Handle equals/enter
             else if (key === 'Enter' || key === '=' || code === 'NumpadEnter') {
                 submit();
                 animateButton('=');
             }
-            // Handle clear
             else if (key === 'Escape' || key === 'Delete' || key === 'Backspace' || 
                      key === 'c' || key === 'C') {
                 clearInput();
                 animateButton('C');
             }
-            // Handle percentage
             else if (key === '%') {
                 appendSymbol('%');
                 animateButton('%');
             }
         });
 
-        // Visual feedback for keyboard presses
         function animateButton(value) {
             const buttons = document.querySelectorAll('button');
             buttons.forEach(button => {
@@ -382,7 +369,6 @@
             });
         }
 
-        // Show keyboard shortcut hints
         function showKeyboardHints() {
             const hints = document.createElement('div');
             hints.innerHTML = `
@@ -402,8 +388,6 @@
                 hints.remove();
             }, 5000);
         }
-
-        // Show hints on first load
         setTimeout(showKeyboardHints, 1000);
     </script>
 </body>

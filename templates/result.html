@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Result</title>
+    <title>{{title}} page</title>
     <style>
         * {
             margin: 0;
@@ -321,7 +321,6 @@
     </div>
 
     <script>
-        // Add some interactive particle generation
         function createParticle() {
             const particle = document.createElement('div');
             particle.className = 'particle';
@@ -336,10 +335,8 @@
             }, 12000);
         }
 
-        // Generate particles periodically
         setInterval(createParticle, 800);
 
-        // Add result value animation on load
         window.addEventListener('load', function() {
             const resultValue = document.querySelector('.result-value');
             resultValue.style.animation = 'slideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both';
