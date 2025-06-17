@@ -6,7 +6,7 @@
   👉 Click this link to use the calculator online :- https://rajesh5101x.pythonanywhere.com/
 
 
-🔧 Features
+🔧 Features  
   ✅ Built with Python and Flask  
   ✅ Handles basic arithmetic operations: +, -, *, /  
   ✅ Supports keyboard input for faster calculations  
@@ -20,9 +20,9 @@
   ![image](https://github.com/user-attachments/assets/5800b949-4296-4224-ab8a-93a417ba53f8)
 
 
-📂 Project Structure  
-  calculator/  
-  ├── templates/ 
+📂 Project Structure   
+  calculator/   
+  ├── templates/     
   │   └── layout.html      # Main template for nav bar   
   │   └── home.html   
   │   └── features.html   
@@ -38,13 +38,13 @@
 ⚙️ How to Run Locally
   1.Clone the repository
     '''
-    git clone https://github.com/Rajesh5101x/Python_Flask_calculator.git
+    git clone https://github.com/Rajesh5101x/Python_Flask_calculator.git  
     cd flask-calculator
     '''
     
   2.Create and activate virtual environment (optional)
     '''
-    python -m venv venv
+    python -m venv venv  
     source venv/bin/activate   # On Windows: venv\Scripts\activate
     '''
 
