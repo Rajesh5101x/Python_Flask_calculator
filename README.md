@@ -22,14 +22,14 @@
 
 📂 Project Structure  
   calculator/  
-  ├── templates/  
-      └── layout.html      # Main template for nav bar   
-      └── home.html   
-      └── features.html   
-      └── about.html   
-      └── contact.html   
-      └── calc.html        # This contain the main calculator logic   
-      └── result.html      # This will show the final result   
+  ├── templates/ 
+  │   └── layout.html      # Main template for nav bar   
+  │   └── home.html   
+  │   └── features.html   
+  │   └── about.html   
+  │   └── contact.html   
+  │   └── calc.html        # This contain the main calculator logic   
+  │   └── result.html      # This will show the final result   
   │   └── index.html       # Frontend interface   
   ├── app.py               # Main Flask application   
   └── README.md    
