@@ -7,11 +7,11 @@
 
 
 🔧 Features
-  ✅ Built with Python and Flask
-  ✅ Handles basic arithmetic operations: +, -, *, /
-  ✅ Supports keyboard input for faster calculations
-  ✅ Responsive and clean UI
-  ✅ Real-time calculation feedback
+  ✅ Built with Python and Flask  
+  ✅ Handles basic arithmetic operations: +, -, *, /  
+  ✅ Supports keyboard input for faster calculations  
+  ✅ Responsive and clean UI  
+  ✅ Real-time calculation feedback   
 
 
 🖥️ Screenshots
@@ -20,19 +20,19 @@
   ![image](https://github.com/user-attachments/assets/5800b949-4296-4224-ab8a-93a417ba53f8)
 
 
-📂 Project Structure
-  calculator/
-  ├── templates/
-      └── layout.html      # Main template for nav bar
-      └── home.html
-      └── features.html
-      └── about.html
-      └── contact.html
-      └── calc.html        # This contain the main calculator logic
-      └── result.html      # This will show the final result
-  │   └── index.html       # Frontend interface
-  ├── app.py               # Main Flask application
-  └── README.md 
+📂 Project Structure  
+  calculator/  
+  ├── templates/  
+      └── layout.html      # Main template for nav bar   
+      └── home.html   
+      └── features.html   
+      └── about.html   
+      └── contact.html   
+      └── calc.html        # This contain the main calculator logic   
+      └── result.html      # This will show the final result   
+  │   └── index.html       # Frontend interface   
+  ├── app.py               # Main Flask application   
+  └── README.md    
 
 
 ⚙️ How to Run Locally
@@ -63,11 +63,11 @@
 
 ⌨️ Keyboard Support
   You can use the following keys directly in the calculator:
-  Numbers: 0–9,  
-  Operations: +, -, *, /,  
-  Decimal: .,  
-  Enter / = to evaluate,  
-  Backspace to delete,  
+  Numbers: 0–9   
+  Operations: +, -, *, /  
+  Decimal: .   
+  Enter / = to evaluate    
+  Backspace to delete    
   C to clear  
 
 
