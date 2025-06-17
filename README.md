@@ -63,12 +63,12 @@
 
 ⌨️ Keyboard Support
   You can use the following keys directly in the calculator:
-  Numbers: 0–9
-  Operations: +, -, *, /
-  Decimal: .
-  Enter / = to evaluate
-  Backspace to delete
-  C to clear
+  Numbers: 0–9,  
+  Operations: +, -, *, /,  
+  Decimal: .,  
+  Enter / = to evaluate,  
+  Backspace to delete,  
+  C to clear  
 
 
 📄 License
