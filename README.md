@@ -35,7 +35,7 @@
   └── README.md    
 
 
-⚙️ How to Run Locally
+⚙️ How to Run Locally  
   1.Clone the repository  
     '''  
     git clone https://github.com/Rajesh5101x/Python_Flask_calculator.git  
@@ -61,6 +61,7 @@
   5.Open http://127.0.0.1:5000 in your browser.  
 
 
+ 
 ⌨️ Keyboard Support
   You can use the following keys directly in the calculator:
   Numbers: 0–9   
