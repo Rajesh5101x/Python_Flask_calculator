@@ -1,0 +1,492 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contact Us - Python Calculator{% endblock %}
+
+{% block content %}
+<div class="contact-container">
+    <div class="contact-hero">
+        <div class="hero-icon">📧</div>
+        <h1>Get In Touch</h1>
+        <p class="hero-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    </div>
+
+    <div class="contact-content">
+        <div class="contact-form-section">
+            <div class="form-container">
+                <h2>Send us a Message</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="bug-report">Bug Report</option>
+                            <option value="feature-request">Feature Request</option>
+                            <option value="general-inquiry">General Inquiry</option>
+                            <option value="technical-support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-icon">🚀</span>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-info-section">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">💌</div>
+                    <h3>Email Us</h3>
+                    <p>hello@pythoncalculator.com</p>
+                    <p class="info-detail">We typically respond within 24 hours</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🐛</div>
+                    <h3>Report Issues</h3>
+                    <p>Found a bug? Let us know!</p>
+                    <a href="#" class="info-link">Submit Bug Report</a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">💡</div>
+                    <h3>Feature Requests</h3>
+                    <p>Have an idea for improvement?</p>
+                    <a href="#" class="info-link">Suggest Feature</a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📚</div>
+                    <h3>Documentation</h3>
+                    <p>Need help getting started?</p>
+                    <a href="#" class="info-link">View Docs</a>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <span class="social-icon">🐙</span>
+                        GitHub
+                    </a>
+                    <a href="#" class="social-link">
+                        <span class="social-icon">🐦</span>
+                        Twitter
+                    </a>
+                    <a href="#" class="social-link">
+                        <span class="social-icon">💼</span>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h3>Quick Answers</h3>
+                <div class="faq-item">
+                    <h4>Is the calculator free to use?</h4>
+                    <p>Yes! Our Python Calculator is completely free and open-source.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I contribute to the project?</h4>
+                    <p>Absolutely! Check out our GitHub repository for contribution guidelines.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How accurate are the calculations?</h4>
+                    <p>We use Python's built-in mathematical functions for maximum precision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .contact-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .contact-hero {
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 60px 0;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 24px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #64b5f6, transparent);
+        animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+
+    .hero-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-10px); }
+        60% { transform: translateY(-5px); }
+    }
+
+    .contact-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        background: linear-gradient(135deg, #64b5f6, #42a5f5, #1e88e5);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        color: #90a4ae;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+
+    .form-container {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 20px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-container h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #64b5f6;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #e8eaed;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        color: #e8eaed;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: #64b5f6;
+        box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.1);
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .form-group select {
+        cursor: pointer;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #546e7a;
+    }
+
+    .submit-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #1e88e5, #1565c0);
+        color: white;
+        border: none;
+        padding: 18px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 8px 32px rgba(30, 136, 229, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 48px rgba(30, 136, 229, 0.4);
+        background: linear-gradient(135deg, #2196f3, #1976d2);
+    }
+
+    .submit-btn:active {
+        transform: translateY(0);
+    }
+
+    .btn-icon {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info-cards {
+        display: grid;
+        gap: 20px;
+    }
+
+    .info-card {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 16px;
+        padding: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    .info-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(100, 181, 246, 0.15);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .info-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .info-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: #e8eaed;
+    }
+
+    .info-card p {
+        color: #90a4ae;
+        margin-bottom: 5px;
+    }
+
+    .info-detail {
+        font-size: 0.9rem;
+        color: #64b5f6;
+    }
+
+    .info-link {
+        color: #64b5f6;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .info-link:hover {
+        color: #42a5f5;
+    }
+
+    .social-section {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 16px;
+        padding: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+
+    .social-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        color: #e8eaed;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #90a4ae;
+        padding: 10px 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+    }
+
+    .social-link:hover {
+        color: #64b5f6;
+        background: rgba(100, 181, 246, 0.1);
+        border-color: rgba(100, 181, 246, 0.3);
+        transform: translateY(-2px);
+    }
+
+    .social-icon {
+        font-size: 1.1rem;
+    }
+
+    .faq-section {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 16px;
+        padding: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .faq-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        color: #e8eaed;
+        text-align: center;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+    }
+
+    .faq-item h4 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        color: #64b5f6;
+    }
+
+    .faq-item p {
+        color: #90a4ae;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+        .contact-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        .contact-hero h1 {
+            font-size: 2.2rem;
+        }
+        
+        .form-container,
+        .contact-info-section {
+            padding: 30px 20px;
+        }
+        
+        .social-links {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .social-link {
+            width: 100%;
+            justify-content: center;
+            max-width: 200px;
+        }
+    }
+</style>
+
+<script>
+    // Form submission handler
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const submitBtn = document.querySelector('.submit-btn');
+        
+        // Show loading state
+        submitBtn.innerHTML = '<span class="btn-icon">⏳</span>Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulate form submission (replace with actual submission logic)
+        setTimeout(() => {
+            // Show success message
+            submitBtn.innerHTML = '<span class="btn-icon">✅</span>Message Sent!';
+            submitBtn.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+            
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                this.reset();
+                submitBtn.innerHTML = '<span class="btn-icon">🚀</span>Send Message';
+                submitBtn.style.background = '';
+                submitBtn.disabled = false;
+            }, 2000);
+        }, 1500);
+    });
+
+    // Form validation
+    document.querySelectorAll('input, select, textarea').forEach(field => {
+        field.addEventListener('blur', function() {
+            if (this.hasAttribute('required') && !this.value.trim()) {
+                this.style.borderColor = '#f44336';
+            } else {
+                this.style.borderColor = '';
+            }
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,322 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contact Us - Python Calculator{% endblock %}
+
+{% block content %}
+    <!-- Main Content -->
+    <div class="about-container">
+        <section class="hero-section">
+            <h1>About PyCalc</h1>
+            <p>We're passionate about creating powerful, elegant tools that make complex calculations simple and accessible to everyone.</p>
+        </section>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🚀</span>
+                <h3>High Performance</h3>
+                <p>Built with Python's robust mathematical libraries, ensuring accurate calculations with lightning-fast performance.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🎨</span>
+                <h3>Modern Design</h3>
+                <p>Sleek, intuitive interface with dark mode support and smooth animations for the best user experience.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3>Cross-Platform</h3>
+                <p>Responsive design that works seamlessly across desktop, tablet, and mobile devices.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3>Privacy First</h3>
+                <p>All calculations are processed locally. Your data never leaves your device, ensuring complete privacy.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⌨️</span>
+                <h3>Keyboard Support</h3>
+                <p>Full keyboard and numpad support for power users who prefer keyboard shortcuts over mouse clicks.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🌐</span>
+                <h3>Open Source</h3>
+                <p>Completely open source and free to use. Contribute to the project or customize it for your needs.</p>
+            </div>
+        </div>
+
+        <section class="team-section">
+            <h2>Our Mission</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #b0bec5; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+                At PyCalc, we believe that powerful tools should be accessible to everyone. Our mission is to provide 
+                a calculator that combines the computational power of Python with an interface so intuitive that anyone 
+                can use it effectively. Whether you're a student, professional, or casual user, we're here to make your 
+                calculations effortless and accurate.
+            </p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Accurate Results</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0ms</span>
+                    <span class="stat-label">Load Time</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Calculations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Available</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2>Built With</h2>
+            <p style="color: #90a4ae; margin-bottom: 20px;">Powered by modern web technologies and Python's mathematical precision</p>
+            
+            <div class="tech-icons">
+                <div class="tech-icon">
+                    <span>🐍</span>
+                    <span>Python</span>
+                </div>
+                <div class="tech-icon">
+                    <span>🌶️</span>
+                    <span>Flask</span>
+                </div>
+                <div class="tech-icon">
+                    <span>🎨</span>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-icon">
+                    <span>⚡</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon">
+                    <span>📱</span>
+                    <span>Responsive</span>
+                </div>
+                <div class="tech-icon">
+                    <span>🔥</span>
+                    <span>Modern UI</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        /* About Us Content */
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #64b5f6, #42a5f5, #1e88e5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { filter: drop-shadow(0 0 10px rgba(100, 181, 246, 0.3)); }
+            100% { filter: drop-shadow(0 0 20px rgba(100, 181, 246, 0.5)); }
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #b0bec5;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(100, 181, 246, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(100, 181, 246, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #64b5f6;
+        }
+
+        .feature-card p {
+            color: #90a4ae;
+            line-height: 1.6;
+        }
+
+        .team-section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 60px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .team-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #64b5f6;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4caf50;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .stat-label {
+            color: #90a4ae;
+            font-size: 1rem;
+        }
+
+        .tech-stack {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .tech-stack h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #64b5f6;
+        }
+
+        .tech-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .tech-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tech-icon:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .tech-icon span:first-child {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .tech-icon span:last-child {
+            color: #90a4ae;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tech-icons {
+                justify-content: space-around;
+            }
+        }
+    </style>
+    
+{% endblock %}

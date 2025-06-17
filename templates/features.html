@@ -1,0 +1,435 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contact Us - Python Calculator{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Powerful Features</h1>
+            <p>Discover what makes our Python Calculator the perfect tool for all your mathematical needs</p>
+        </section>
+
+        <!-- Main Features Grid -->
+        <section class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Lightning Fast</h3>
+                <p>Powered by Python's robust calculation engine, our calculator delivers instant results with precision and speed that you can rely on.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🎯</span>
+                <h3>Precision Accuracy</h3>
+                <p>Advanced floating-point arithmetic ensures accurate calculations for both simple and complex mathematical operations.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🌙</span>
+                <h3>Dark Mode Design</h3>
+                <p>Sleek, modern dark interface that's easy on the eyes during long calculation sessions, with beautiful animations and effects.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">⌨️</span>
+                <h3>Full Keyboard Support</h3>
+                <p>Complete keyboard and numpad integration with visual feedback. Type naturally without reaching for your mouse.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3>Responsive Design</h3>
+                <p>Works seamlessly across all devices - desktop, tablet, and mobile. Your calculator is always accessible wherever you are.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🎨</span>
+                <h3>Modern UI/UX</h3>
+                <p>Glassmorphism effects, smooth animations, and intuitive design make calculations not just functional, but enjoyable.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features List -->
+        <section class="feature-list">
+            <h2>Complete Feature Set</h2>
+            <div class="feature-items">
+                <div class="feature-item">
+                    <span class="feature-item-icon">🔢</span>
+                    <div class="feature-item-content">
+                        <h4>Basic Operations</h4>
+                        <p>Addition, subtraction, multiplication, division, and percentage calculations</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">🎪</span>
+                    <div class="feature-item-content">
+                        <h4>Visual Feedback</h4>
+                        <p>Button animations, hover effects, and keyboard press indicators</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">💾</span>
+                    <div class="feature-item-content">
+                        <h4>Session Memory</h4>
+                        <p>Maintains calculation history during your session for reference</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">🔄</span>
+                    <div class="feature-item-content">
+                        <h4>Continuous Operations</h4>
+                        <p>Chain multiple operations seamlessly without interruption</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">🎯</span>
+                    <div class="feature-item-content">
+                        <h4>Error Handling</h4>
+                        <p>Smart error detection and user-friendly error messages</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">⚙️</span>
+                    <div class="feature-item-content">
+                        <h4>Flask Integration</h4>
+                        <p>Built with Python Flask for robust backend processing</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">🚀</span>
+                    <div class="feature-item-content">
+                        <h4>Fast Loading</h4>
+                        <p>Optimized code and minimal dependencies for quick startup</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-item-icon">🔐</span>
+                    <div class="feature-item-content">
+                        <h4>Secure Processing</h4>
+                        <p>All calculations processed securely with input validation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Ready to Calculate?</h2>
+            <p>Experience all these features firsthand with our powerful Python calculator</p>
+            <a href="{{url_for('calc')}}" class="cta-button">
+                <span class="cta-button-icon">🖩</span>
+                Start Calculating
+            </a>
+        </section>
+    </div>
+
+
+    <style>
+    /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #64b5f6, #42a5f5, #1e88e5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            color: #b0bec5;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(100, 181, 246, 0.3);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #64b5f6, transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-8px);
+            }
+            60% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .feature-card h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #64b5f6;
+        }
+
+        .feature-card p {
+            color: #b0bec5;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .feature-list {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .feature-list h2 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #64b5f6;
+            text-align: center;
+        }
+
+        .feature-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(100, 181, 246, 0.2);
+        }
+
+        .feature-item-icon {
+            font-size: 1.5rem;
+            margin-top: 2px;
+        }
+
+        .feature-item-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #e8eaed;
+        }
+
+        .feature-item-content p {
+            color: #90a4ae;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 50px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #4caf50, transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #4caf50;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: #b0bec5;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: linear-gradient(135deg, #4caf50, #2e7d32);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 16px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(76, 175, 80, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 48px rgba(76, 175, 80, 0.4);
+            background: linear-gradient(135deg, #66bb6a, #43a047);
+        }
+
+        .cta-button-icon {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-section h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-items {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+
+
+    <script>
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(15, 15, 35, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(15, 15, 35, 0.95)';
+            }
+        });
+
+        // Animate feature cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .feature-item').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+    
+{% endblock %}
